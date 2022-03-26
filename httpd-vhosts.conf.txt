@@ -1,0 +1,15 @@
+NameVirtualHost *
+<VirtualHost *>
+	DocumentRoot "C:\xampp\htdocs"
+	ServerName localhost
+</VirtualHost>
+
+<VirtualHost *>
+	DocumentRoot "C:\xampp\htdocs\facturador-vitual\public\login"
+	ServerName facturador-vitual.test
+	<Directory "C:\xampp\htdocs\facturador-vitual\public\login">
+		Options All
+		AllowOverride All
+		Require all granted
+	</Directory>
+</VirtualHost>
